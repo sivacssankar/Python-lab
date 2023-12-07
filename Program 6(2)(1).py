@@ -115,18 +115,19 @@ print(result)
 # In[23]:
 
 
-words=[]
-def longest(word):
-    lw=len(word[0])
-    for i in word:
-        current=len(i)
-        if current>lw:
-            lw=current
-    print("the length of longest word is:",lw)
-for i in range(0,4):
-    n=input("Enter a word:")
-    words.append(n)
-longest(words)
+list=[]
+for i in range(4):
+    n=input("enter word")
+    list.append(n)
+print(list)
+current=0
+for i in list:
+    j=len(i)
+       
+    if j>current:
+        current=j
+print(current)
+    
 
 
 # In[4]:
