@@ -13,11 +13,21 @@ print(b)
 # In[28]:
 
 
-a=open("siva.txt","r")
+a=open("siva.txt")
+z=open("dd.txt","w")
 fi=a.readlines()
-for i in range(0,len(fi)):
-    if i%2==0:
-        print(fi[i+1])
+for i in range(len(fi)):
+    if i%2!=0:
+        z.write(fi[i])
+        
+z.close()
+z=open("dd.txt")
+cj=z.readlines()
+cj=[x.strip() for x in cj]
+print(cj)
+a.close()
+z.close()
+
 
 
 # In[ ]:
