@@ -33,6 +33,14 @@ z.close()
 # In[ ]:
 
 
+hi=[]
+a=open("data.csv")
+fi=a.readlines()
+for i in range(len(fi)):
+    hi.append(fi[i].strip())
+print(hi)
+
+
 
 
 
